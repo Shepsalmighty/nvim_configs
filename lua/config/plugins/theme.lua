@@ -4,6 +4,9 @@ return {
     priority = 1000,
 
     config = function()
-        vim.cmd.colorscheme "catppuccin"
-    end
+        require("catppuccin").setup({
+            no_italic = true,
+        })
+        vim.cmd.colorscheme("catppuccin")
+    end,
 }
