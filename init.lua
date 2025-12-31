@@ -38,3 +38,4 @@ vim.keymap.set(
 )
 
 require("config.lazy")
+require ("config.not_lazy")  -- contains the replace all script (if it works)
