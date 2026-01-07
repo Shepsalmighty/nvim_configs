@@ -13,10 +13,10 @@ return {
 
                 null_ls.builtins.formatting.clang_format.with({
                     extra_args = {
-                        "-style={BasedOnStyle: LLVM, IndentWidth: 4, BreakBeforeBraces: GNU, PointerAlignment: Right}"
+                        "-style={BasedOnStyle: LLVM, IndentWidth: 4, BreakBeforeBraces: Allman, PointerAlignment: Right}"
                     },
                     condition = function()
-                        return not fs(".clang-format") -- only apply if no file exists
+                        return not fs(".clang-format")
                     end,
                 }),
             }

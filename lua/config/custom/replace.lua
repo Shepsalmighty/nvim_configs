@@ -22,6 +22,7 @@ local function replace_prompt(confirm)
 	end
 
 	vim.cmd(string.format("%%s/%s/%s/%s", old, new, flags))
+    vim.cmd(":noh")
 end
 
 vim.keymap.set(
